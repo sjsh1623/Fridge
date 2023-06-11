@@ -1,5 +1,3 @@
-import Login from "../screens/Login";
-
 const Message = {
     wrongEmail : 'Email 형식이 올바르지 않습니다',
     emptyPassword : '비밀번호를 입력해주세요',

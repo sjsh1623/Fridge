@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Hoshi} from "react-native-textinput-effects";
+import {Primary} from "../theme/Color";
 
-export const CustomHoshi = ({onBlur, onChangeText, onFocus, text = ''}) => {
+export const CustomHoshi = ({onBlur, onChangeText, onFocus, text = '', secureTextEntry = false}) => {
     return (
         <View style={styles.hoshiContainer}>
             <Hoshi
@@ -18,6 +19,8 @@ export const CustomHoshi = ({onBlur, onChangeText, onFocus, text = ''}) => {
                 onBlur={onBlur}
                 onChangeText={onChangeText}
                 onFocus={onFocus}
+                borderColor={Primary.color}
+                secureTextEntry={secureTextEntry}
             />
         </View>
 
